@@ -1,36 +1,41 @@
-package timSoBanHH;
+package qweqwe;
 import java.util.Scanner;
-public class timsobanhoanhao {
-		public static void main(String[] args){
-		    int x = 1; 
-		    int max;
-	        System.out.println("nhap max");
-	        Scanner sc = new Scanner(System.in);
-	        max = sc.nextInt();
-		    for (x = 1; x <= max; x++) { 
-		        int sume = 0;
-		        int sumf = 0;
-		        int sodu = 0;
-		        for (int e = 1; e < x; e++) {
-		            if ((x % e) == 0) {
-		                sume += e;
-		                if (sume == x) {
-		                	System.out.print(" " + x + " ");
-		                }
-		                else if (sume < x) {
-		                	continue;
-		                }
-		            }
-		        }
-		        for (int f = 1; f*f <= x; f++) {
-		        	if ((x % f) == 0) {
-		        		sumf +=f;
-		        	}
-		        }
-		        sodu = sume - sumf;
-		        if (sodu - x >=0){           
-		            System.out.print(" " +x+ " ");
-		        }
-		        else {
-		        	continue;
-		        }}}}
+public class thigiuahkupdate {
+	public static void main(String[] args){
+	    int x = 1; 
+	    int max;
+        System.out.println("nhap max");
+        Scanner sc = new Scanner(System.in);
+        max = sc.nextInt();
+	    for (x = 1; x <= max; x++) { 
+	        int sume = 0;
+	        int sumf = 0;
+	        int sodu = 0;
+	        for (int e = 1; e < x; e++) {
+	            if ((x % e) == 0) {
+	                sume += e;
+	                if (sume == x) {
+	                	System.out.print(" " + x + " ");
+	                	continue;
+	                }
+
+	            }
+	        
+	        for (int f = 1; f*f <= x; f++) {
+	        	if ((x % f) == 0) {
+	        		sumf +=f;
+	        	}
+	        }}
+	        sodu = sume - sumf;
+	        if (sodu - x >=0){           
+	            System.out.print(" " +x+ " ");
+	            continue;
+	        }
+	        if((x%6)== 0||(x%20)==0||(x%28)==0||(x%28)==0||(x%30)==0||(x%54)==0){
+	        	System.out.print(" "+ x +" ");
+	        	continue;
+	        }
+	        else {
+	        	continue;
+	        }
+	    }}}
